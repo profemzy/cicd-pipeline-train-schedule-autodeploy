@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        //be sure to replace "willbla" with your own Docker Hub username:profemzy
+        //be sure to replace "willbla" with your own Docker Hub username:profemzy in my case
         DOCKER_IMAGE_NAME = "profemzy/train-schedule"
         CANARY_REPLICAS = 0
     }
