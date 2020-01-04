@@ -30,7 +30,7 @@ app.use(function (req, res, next) {
 app.use('/', indexRouter);
 app.use('/trains', trainsRouter);
 
-//this endpoint performs cpu-intensive calculations
+//this endpoint performs cpu-intensive calculations for overloading
 app.get('/generate-cpu-load', function(req, res, next) {
   var val = 0.0001
   for (i = 0; i < 1000000; i++) {
